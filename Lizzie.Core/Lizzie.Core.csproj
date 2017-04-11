@@ -107,6 +107,14 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agent.cs" />
+    <Compile Include="Gender.cs" />
+    <Compile Include="Interfaces\IAgent.cs" />
+    <Compile Include="Interfaces\IMood.cs" />
+    <Compile Include="Interfaces\IKnownPerson.cs" />
+    <Compile Include="Mood.cs" />
+    <Compile Include="MoodQuality.cs" />
+    <Compile Include="NormalMood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Lizzie.Core.rd.xml" />
   </ItemGroup>

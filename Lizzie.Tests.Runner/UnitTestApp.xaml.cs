@@ -28,7 +28,7 @@ namespace Lizzie.Tests.Runner
         protected override void OnInitializeRunner()
         {
             AddTestAssembly(GetType().GetTypeInfo().Assembly);
-            AddTestAssembly(typeof(SampleTest).GetTypeInfo().Assembly);
+            AddTestAssembly(typeof(AgentTest).GetTypeInfo().Assembly);
         }
     }
 }
