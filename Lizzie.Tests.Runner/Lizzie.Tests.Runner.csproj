@@ -122,6 +122,12 @@
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lizzie.Core.Tests\Lizzie.Core.Tests.csproj">
+      <Project>{825aac3f-88d0-4041-bce0-c83bfd0697d5}</Project>
+      <Name>Lizzie.Core.Tests</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

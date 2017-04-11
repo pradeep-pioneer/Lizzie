@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleTest.cs" />
     <EmbeddedResource Include="Properties\Lizzie.Core.Tests.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +116,11 @@
       <Project>{db803d9e-507c-48fe-bb3e-06d0811d4262}</Project>
       <Name>Lizzie.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsIoT, Version=10.0.14393.0">
+      <Name>Windows IoT Extensions for the UWP</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

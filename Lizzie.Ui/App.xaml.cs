@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lizzie.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -30,6 +32,10 @@ namespace Lizzie.Ui
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new LizzieDataContext())
+            {
+                db.Database.Migrate();
+            }
         }
 
         /// <summary>

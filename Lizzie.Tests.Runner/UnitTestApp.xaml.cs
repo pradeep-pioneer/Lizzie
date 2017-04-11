@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Xunit.Runners.UI;
 using System.Reflection;
+using Lizzie.Core.Tests;
+
 namespace Lizzie.Tests.Runner
 {
     /// <summary>
@@ -26,6 +28,7 @@ namespace Lizzie.Tests.Runner
         protected override void OnInitializeRunner()
         {
             AddTestAssembly(GetType().GetTypeInfo().Assembly);
+            AddTestAssembly(typeof(SampleTest).GetTypeInfo().Assembly);
         }
     }
 }
